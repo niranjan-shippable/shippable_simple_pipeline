@@ -1,9 +1,9 @@
 jobs:
-  - name: bvt-v2
+  - name: test_simple_pipeline
     type: runSh
     flags:
       - my_bvt
     steps:
-      - IN: bvt_v2_repo
+      - IN: test_repo
       - TASK:
         - script: IN/bvt_v2_repo/gitRepo/test.sh bvt_v2_params 
