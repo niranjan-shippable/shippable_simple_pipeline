@@ -1,9 +1,10 @@
 resources:
-  - name: bvt_v2_repo
+  - name: test_repo
     type: gitRepo
-    integration: githubSub
+    integration: github
     flags:
-      - my_bvt
+      - test_flag_1
+      - test_flag_2
     pointer:
       sourceName: niranjan92/bvt-v2
       branch: master
