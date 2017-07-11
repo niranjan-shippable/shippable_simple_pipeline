@@ -1,0 +1,9 @@
+jobs:
+  - name: bvt-v2
+    type: runSh
+    flags:
+      - my_bvt
+    steps:
+      - IN: bvt_v2_repo
+      - TASK:
+        - script: IN/bvt_v2_repo/gitRepo/test.sh bvt_v2_params 
