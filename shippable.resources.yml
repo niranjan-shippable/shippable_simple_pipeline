@@ -1,0 +1,9 @@
+resources:
+  - name: bvt_v2_repo
+    type: gitRepo
+    integration: githubSub
+    flags:
+      - my_bvt
+    pointer:
+      sourceName: niranjan92/bvt-v2
+      branch: master
